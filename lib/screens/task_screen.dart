@@ -65,7 +65,17 @@ class TaskScreen extends StatelessWidget {
                 ),
               ),
               Expanded(
-                child: ModifiedContainer(),
+                child: Container(
+                  padding: EdgeInsets.symmetric(horizontal: 10.0),
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(30.0),
+                      topRight: Radius.circular(30.0),
+                    ),
+                  ),
+                  child: TaskList(),
+                ),
               ),
             ],
           ),
@@ -73,26 +83,6 @@ class TaskScreen extends StatelessWidget {
   }
 }
 
-class ModifiedContainer extends StatelessWidget {
-  const ModifiedContainer({
-    Key key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      padding: EdgeInsets.symmetric(horizontal: 10.0),
-      decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.only(
-          topLeft: Radius.circular(30.0),
-          topRight: Radius.circular(30.0),
-        ),
-      ),
-      child: TaskList(),
-    );
-  }
-}
 /*
 
 

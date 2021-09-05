@@ -1,3 +1,4 @@
+import 'package:check_list/models/tasks.dart';
 import 'package:check_list/widgets/task_list.dart';
 import 'package:flutter/cupertino.dart';
 
@@ -5,7 +6,18 @@ import 'package:flutter/material.dart';
 
 import 'add_task_screen.dart';
 
-class TaskScreen extends StatelessWidget {
+class TaskScreen extends StatefulWidget {
+  @override
+  _TaskScreenState createState() => _TaskScreenState();
+}
+
+class _TaskScreenState extends State<TaskScreen> {
+  List<Tasks> task = [
+    Tasks(isChecked: true, taskTitle: 'abc'),
+    Tasks(isChecked: false, taskTitle: 'xyz'),
+    Tasks(isChecked: true, taskTitle: '123')
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -74,7 +86,7 @@ class TaskScreen extends StatelessWidget {
                       topRight: Radius.circular(30.0),
                     ),
                   ),
-                  child: TaskList(),
+                  child: TaskList(task),
                 ),
               ),
             ],

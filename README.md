@@ -1,16 +1,28 @@
 # check_list
 
-A new Flutter application.
+## Our Goal
 
-## Getting Started
+The objective Application is to  manage state in Flutter via Provider. Provider package use is officially recommended  to manage our app state by Flutter.
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+## What we created
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+A check_list app to keep track of all your tasks.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## What this app does
+
+The App has 2 screens.
+1. TaskScreen here you can see your current list of tasks, check-uncheck a task or delete a completed task by holding the task for few seconds.
+ 
+
+2. AddTask here write the matter of a new task and set the priority of the task, the task will be sorted in order as per the priority given and will be displayed on TaskScreen.
+
+
+![alt text](https://github.com/deepakbiltoria/check_list/blob/master/taskscreen.JPG)            ![alt text](https://github.com/deepakbiltoria/check_list/blob/master/addtask.JPG)
+
+
+
+
+
+
+
